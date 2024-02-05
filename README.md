@@ -1,9 +1,9 @@
 # rpi5-mqtt-io-bridge
-This repo contains serveral files for creating a docker image running mqtt-io incombination with gpiozeros. The image is preconfigured to enable control of the GPIOs of Raspberry Pi 5 via MQTT.
+This repo contains serveral files for creating a docker image running [mqtt-io](https://mqtt-io.app) incombination with [gpiozero](https://github.com/gpiozero/gpiozero). The image is preconfigured in the config.yml to access Raspberry Pi 5 GPIOs via MQTT.
 
 ## Installaltion
-1. Create custom GPIO config.yml, as described on mqtt-io webpage :https://mqtt-io.app/2.2.9/#/config/scenarios
-2. Build the docker image via the CLI with dockerfile located at "Path":  
+1. Customize config.yml to your needs, see https://mqtt-io.app/2.2.9/#/config/scenarios.
+2. Build the docker image via the CLI from the dockerfile located at "Path":  
 `
 $docker build Path -t mqtt-io-rpi5
 `
