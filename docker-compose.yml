@@ -1,0 +1,14 @@
+version: '2.2'
+
+services:
+  openhab:
+    container_name: mqtt-io
+    image: "mqtt-io-rpi5"
+    restart: always
+    volumes:
+      - "PathToFile/config.yml:/app/config.yml:ro"
+    environment:
+       USER_ID: "1000"
+       GROUP_ID: "1000"
+    devices:
+      - "/dev/gpiochip4:/dev/gpiochip4"

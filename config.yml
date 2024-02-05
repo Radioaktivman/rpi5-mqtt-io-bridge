@@ -1,0 +1,30 @@
+mqtt:
+  host: <IP>
+  topic_prefix: mqtt-io
+  user: <username>
+  password: <password>
+# GPIO
+gpio_modules:
+  - module: gpiod
+    chip: gpiochip4
+    name: rpi
+
+
+digital_outputs:
+  # Pin 1 is an output connected to a light
+  - name: GPIO21OUT
+    module: rpi
+    pin: 21
+    inverted: TRUE
+  - name: GPIO20OUT
+    module: rpi
+    pin: 20
+    inverted: TRUE
+  - name: GPIO16OUT
+    module: rpi
+    pin: 16
+    inverted: TRUE
+  - name: GPIO12OUT
+    module: rpi
+    pin: 12
+    inverted: TRUE
