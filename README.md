@@ -10,7 +10,6 @@ $docker build Path -t mqtt-io-rpi5
 3. Lunch the container from CLI with docker compose:
 `
 $docker compse docker compose -f Path/docker-compose.yml up -d
- up -d
 `
 
 
